@@ -22,10 +22,12 @@
             ];
             shellHook = ''
               export NODE_OPTIONS=--openssl-legacy-provider
+              ln -s ${nodeDependencies}/lib/node_modules ./node_modules
+              export PATH="${nodeDependencies}/bin:$PATH"
             '';
           };
-          nodeDependencies = (pkgs.callPackage ./default.nix { }).nodeDependencies;
 
+          nodeDependencies = (pkgs.callPackage ./default.nix { }).nodeDependencies;
 
           app = pkgs.stdenv.mkDerivation {
             name = "my-app";
@@ -49,7 +51,6 @@
           app = app;
           packages.default = app;
           devShells.default = devshell;
-
         })
     );
 }

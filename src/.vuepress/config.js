@@ -37,8 +37,20 @@ module.exports = {
 
     nav: [
       {
-        text: 'Quick Start',
-        link: '/quick-start/',
+        text: 'Tutorials',
+        link: '/tutorials/',
+      },
+      {
+        text: 'How To Guides',
+        link: '/how-to/',
+      },
+      {
+        text: 'Concepts',
+        link: '/concepts/',
+      },
+      {
+        text: 'Join our Discord!',
+        link: 'https://discord.gg/vG2VfJ73HW'
       },
       {
         text: 'Flakery.dev',

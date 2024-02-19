@@ -31,7 +31,7 @@ ssh-keygen
 
 this will generate a new ssh key in your `~/.ssh` directory. You can then add this key to your flake by editing the `hello.nix` file 
 
-```nix
+```nix{26,27}
 { config, pkgs, ... }:
 
 {
@@ -83,7 +83,9 @@ git remote add origin git@github.com:$YOUR_USERNAME/hello-flakery.git
 git push -u origin main
 ```
 
-> Replace `$YOUR_USERNAME` with your Github username.
+::: tip
+Replace `$YOUR_USERNAME` with your Github username.
+:::
 
 ### Deploy your flake on Flakery
 
@@ -91,7 +93,10 @@ git push -u origin main
 
 
 To deploy your flake on Flakery, you will need to create a new deployment. You can do this by visiting the [Flakery website](https://flakery.dev/flakes) and adding your flake to the input field. the url should look something like this: `github:$YOUR_USERNAME/hello-flakery#default`.
-> Replace `$YOUR_USERNAME` with your Github username.
+
+::: tip
+Replace `$YOUR_USERNAME` with your Github username.
+:::
 
  ![Alt text](./image.png)
 
@@ -120,7 +125,9 @@ After a few minutes, your deployment will be ready. You can then ssh into your d
 ```shell
 ssh alice@$YOUR_DEPLOYMENT_IP
 ```
-> Replace `$YOUR_DEPLOYMENT_IP` with the IP address of your deployment.
+::: tip
+Replace `$YOUR_DEPLOYMENT_IP` with the IP address of your deployment.
+:::
 
 you should get a terminal session from which you can interact with your deployment. 
 

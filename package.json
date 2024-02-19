@@ -9,7 +9,7 @@
   },
   "repository": "flakery.dev/docs",
   "scripts": {
-    "dev": "vuepress dev src",
+    "dev": "vuepress dev src --temp `mktemp -d`",
     "build": "vuepress build src --temp /tmp"
   },
   "license": "MIT",

@@ -12539,7 +12539,7 @@ let
     ];
     buildInputs = globalBuildInputs;
     meta = {
-      description = "documentation for flakery.dev";
+      description = "documentation for Flakery.dev";
       license = "MIT";
     };
     production = true;
