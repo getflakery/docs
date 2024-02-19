@@ -2,13 +2,33 @@ name: CI
 
 on:
   push:
+    branches:
+      - main  # Assuming deployment happens from the main branch
   pull_request:
 
 jobs:
-  check:
+  build:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/magic-nix-cache-action@main
       - run: nix build
+      - uses: actions/upload-artifact@v3
+        with:
+          name: built-site
+          path: |
+            result/*
+  deploy:
+    needs: build
+    runs-on: ubuntu-22.04
+    if: github.ref == 'refs/heads/main'  # Only deploy from the main branch
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/download-artifact@v3
+        with:
+          name: built-site
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./built-site
