@@ -194,3 +194,5 @@ After a few minutes, your deployment will be ready. You can then browse to the U
 
 
 you should see a simple "Hello, world!" page served by Caddy.
+
+![Alt text](./image-10.png)
