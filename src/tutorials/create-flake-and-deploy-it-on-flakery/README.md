@@ -116,16 +116,23 @@ now we can create a `configuration.nix` file in our `simple-flake` directory.
 
 ```nix
 { config, pkgs, ... }:
-
+let 
+  flakeryDomain = builtins.readFile /metadata/flakery-domain;
+in
 {
-  system.stateVersion = "23.05"; 
+  system.stateVersion = "23.05";
 
-  # Caddy service configuration.
   services.caddy = {
     enable = true;
-  };
+    virtualHosts."${flakeryDomain}".extraConfig = ''
+      respond "Hello, world!"
+    '';
+  }; 
+  networking.firewall.allowedTCPPorts = [ 80 443 ];
 }
 ```
+
+<!-- todo explain this file -->
 
 now that we have added a `configuration.nix` file to our flake, we can generate a flake.lock to pin our flake to a specific version of nixpkgs and flakery.
 
@@ -178,19 +185,12 @@ Once you have added your flake, you can click the "Create Deployment" button. Th
 
 after creating your deployment, you can view the details of your deployment.
 
-![Alt text](./image-2.png)
+![Alt text](./image-8.png)
 
-![Alt text](./image-3.png)
+
+![Alt text](./image-9.png)
 
 After a few minutes, your deployment will be ready. You can then browse to the URL of your deployment to view your NixOS system.
 
-```
-http://$YOUR_IP
-```
-
-<!-- warning -->
-::: warning
-Make sure to add `http://` before your IP address. Some browsers may not resolve the IP address without it.
-:::
 
 you should see a simple "Hello, world!" page served by Caddy.
