@@ -16,5 +16,5 @@
 ## Connect to a Deployment
 
 - [Connect to a Deployment With SSH](./connect-ssh/)
-- [Connect to a Deployment With Tailscale](/connect-tailscale/)
+- [Connect to a Deployment With Tailscale](./connect-tailscale/)
 
