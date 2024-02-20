@@ -4,6 +4,6 @@ home: true
 heroText: Documentation for Flakery
 tagline: Flakery makes deploying NixOS as easy as cloning a git repo
 actionText: Quick Start →
-actionLink: /tutorials/quick-start/
+actionLink: /guides/quick-start/
 # footer: Made by flakery with ❤️
 ---

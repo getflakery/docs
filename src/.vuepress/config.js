@@ -37,12 +37,8 @@ module.exports = {
 
     nav: [
       {
-        text: 'Tutorials',
-        link: '/tutorials/',
-      },
-      {
-        text: 'How To Guides',
-        link: '/how-to/',
+        text: 'Guides',
+        link: '/guides/',
       },
       {
         text: 'Concepts',
