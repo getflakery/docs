@@ -1,4 +1,6 @@
-# Introduction
+# Quick Start
+
+[[toc]]
 
 Flakery creates templates and deployments for your nixos flakes. You can use flakery to create deployments of a nixos flake, seeded with a file system. These files are encrypted at rest and can be decrypted on demand. 
 
@@ -11,7 +13,7 @@ In order to use flakery, you will need to have the following installed:
 - [OpenSSH](https://www.openssh.com/)
 - [Git](https://git-scm.com/)
 
-### Create your project directory and initialize a flake
+## Create your project directory and initialize a flake
 
 To create a new flake, you can use the `nix flake init` command. This will create a new directory with a `flake.nix` file and a `hello.nix` file.
 
@@ -21,7 +23,7 @@ cd hello-flakery
 nix flake init -t github:getflakery/flakes#default
 ```
 
-### Add your ssh public key to the flake
+## Add your ssh public key to the flake
 
 If you don't already have an ssh key, you can generate one with the following command:
 
@@ -65,7 +67,7 @@ this will generate a new ssh key in your `~/.ssh` directory. You can then add th
 ```
 
 
-### Create a git repository and push your flake
+## Create a git repository and push your flake
 
 Initialize a git repository and create an initial commit. 
 
@@ -87,9 +89,9 @@ git push -u origin main
 Replace `$YOUR_USERNAME` with your Github username.
 :::
 
-### Deploy your flake on Flakery
+## Deploy your flake on Flakery
 
-#### Create your deployment template 
+### Create your deployment template 
 
 
 To deploy your flake on Flakery, you will need to create a new deployment. You can do this by visiting the [Flakery website](https://flakery.dev/flakes) and adding your flake to the input field. the url should look something like this: `github:$YOUR_USERNAME/hello-flakery#default`.
@@ -101,7 +103,7 @@ Replace `$YOUR_USERNAME` with your Github username.
  ![Alt text](./image.png)
 
 
-#### Create your deployment
+### Create your deployment
 
 Once you have added your flake, it will appear in the list of available flakes. You can click on the flake to view its details.
 

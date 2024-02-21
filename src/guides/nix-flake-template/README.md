@@ -1,5 +1,7 @@
 # Using the Flakery Nix Flake Template
 
+[[toc]]
+
 Flakery provides a nix flake template to for your convienience. This guide will assist you in using this template to deploy NixOS on Flakery. 
 
 ## Initialize a new Nix Flake using the Flakery Template

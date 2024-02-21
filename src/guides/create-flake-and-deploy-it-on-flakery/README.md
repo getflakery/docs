@@ -1,5 +1,7 @@
 # Create a NixOS Flake and Deploy it on Flakery
 
+[[toc]]
+
 In this tutorial, we will create a basic NixOS flake and deploy it on Flakery.
 
 ## Prerequisites
@@ -10,7 +12,7 @@ Before you begin, you will need to have the following installed:
 - [Nix Flakes](https://nixos.wiki/wiki/Flakes)
 - [Git](https://git-scm.com/)
 
-### Create your project directory and initialize a flake
+## Create your project directory and initialize a flake
 
 To create a new flake, you can use the `nix flake init` command. This will create a new directory with a `flake.nix` file.
 
@@ -164,7 +166,7 @@ Replace `git@github.com:getflakery/basic-flake.git` with your repository URL.
 
 Now that you have created a flake and pushed it to a git repository, you can deploy it on Flakery.
 
-### Deploy your Nixos Flake on Flakery
+## Deploy your Nixos Flake on Flakery
 
 To deploy your flake on Flakery, you will need to create a new deployment. You can do this by visiting the [Flakery website](https://flakery.dev/flakes) and adding your flake to the input field. the url should look something like this: `github:$YOUR_USERNAME/basic-flake#hello-flakery`.
 

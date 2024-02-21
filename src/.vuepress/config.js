@@ -1,6 +1,11 @@
 const { description } = require('../../package')
 
 module.exports = {
+  markdown: {
+    lineNumbers: true,
+    toc: { includeLevel: [2, 3] },
+  },
+  
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
