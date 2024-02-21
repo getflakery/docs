@@ -42,24 +42,70 @@ module.exports = {
 
     nav: [
       {
-        text: 'Guides',
-        link: '/guides/',
-      },
-      {
-        text: 'Concepts',
-        link: '/concepts/',
+        text: 'Flakery.dev',
+        link: 'https://flakery.dev'
       },
       {
         text: 'Join our Discord!',
         link: 'https://discord.gg/vG2VfJ73HW'
       },
+
+    ],
+    displayAllHeaders: true, // Default: false
+
+    sidebar: [
       {
-        text: 'Flakery.dev',
-        link: 'https://flakery.dev'
+        title: "Guides",
+        path: "/guides/",
+        children: [
+          {
+            title: "Getting Started",
+            children: [
+              {
+                title: "Quick Start",
+                path: "/guides/quick-start/",
+    
+              },
+    
+              {
+                title: "Create a NixOS Flake and Deploy it on Flakery",
+                path: "/guides/create-flake-and-deploy-it-on-flakery/",
+              },
+              {
+                title: "Adding Flakery to an Existing NixOS Configuration",
+                path: "/guides/adding-flakery-to-an-existing-nixos-configuration/"
+              },
+              {
+                title: "Using the Flakery Nix Flake Template",
+                path: "/guides/nix-flake-template/"
+              },
+            ]
+          },
+          {
+            title: "Create a Deployment",
+            children: [
+              {
+                title: "Create a Github Repo and Deploy Your Flake on Flakery",
+                path: "/guides/create-git-deploy-flakery/"
+              },
+              {
+                title: "Deploy a Go Web Server on Flakery",
+                path: "/guides/deploy-go-webserver/"
+              }
+            ]
+          },
+          {
+            title: "Connect to a Deployment",
+            children: [
+              {
+                title: "Connect to a Deployment With SSH",
+                path: "/guides/connect-ssh/"
+              },
+            ]
+          }
+        ]
       }
     ],
-    sidebar: {
-    }
   },
 
   /**
