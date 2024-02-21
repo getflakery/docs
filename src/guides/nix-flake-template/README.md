@@ -39,4 +39,5 @@ in
 
 ## Deploy Your Nix Flake
 
-see [Deploying a Nix Flake](/guides/deploying-a-nix-flake) for instructions on deploying your Nix Flake.
+see [Deploying a Nix Flake](guides/create-git-deploy-flakery/) for instructions on deploying your Nix Flake.
+
