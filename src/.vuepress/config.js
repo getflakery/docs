@@ -41,13 +41,22 @@ module.exports = {
     lastUpdated: false,
 
     nav: [
-      {
-        text: 'Flakery.dev',
-        link: 'https://flakery.dev'
-      },
+        {
+          text: 'Guides',
+          link: '/guides/',
+        },
+        {
+          text: 'Concepts',
+          link: '/concepts/',
+        },
+
       {
         text: 'Join our Discord!',
         link: 'https://discord.gg/vG2VfJ73HW'
+      },
+      {
+        text: 'Flakery.dev',
+        link: 'https://flakery.dev'
       },
 
     ],
@@ -56,7 +65,6 @@ module.exports = {
     sidebar: [
       {
         title: "Guides",
-        path: "/guides/",
         children: [
           {
             title: "Getting Started",
