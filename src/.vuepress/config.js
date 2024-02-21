@@ -9,7 +9,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Flakery.dev Documentation',
+  title: 'Flakery',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -55,7 +55,7 @@ module.exports = {
         link: 'https://discord.gg/vG2VfJ73HW'
       },
       {
-        text: 'Flakery.dev',
+        text: 'Dashboard',
         link: 'https://flakery.dev'
       },
 
