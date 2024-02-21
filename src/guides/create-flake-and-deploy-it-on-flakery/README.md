@@ -142,6 +142,7 @@ now that we have added a `configuration.nix` file to our flake, we can generate 
 nix flake lock
 ```
 
+
 ## Create a git repository and push your flake
 
 Initialize a git repository and create an initial commit. 

@@ -264,4 +264,63 @@ Great! so in this project we have:
 - a nix flake that defines a NixOS configuration that runs that http server 
 
 
-Now all thats left is creating a git repository and [deploying on flakery](/guides/delpoy/)
+Now all thats left is creating a git repository and deploying it on Flakery. 
+
+
+## Create a git repository and push your flake
+
+Initialize a git repository and create an initial commit. 
+
+```shell
+git init
+git add .
+git commit -m "initial commit"
+```
+
+[Create a new repository on GitHub](https://github.com/new) and push your flake to the repository. 
+
+```shell
+git branch -M main
+git remote add origin git@github.com:$YOUR_USERNAME/go-webserver.git
+git push -u origin main
+```
+
+::: tip
+Replace `$YOUR_USERNAME` with your Github username.
+:::
+
+Now that you have created a flake and pushed it to a git repository, you can deploy it on Flakery.
+
+## Deploy your NixOS Configuration on Flakery
+
+### Create a Deployment Template 
+
+To deploy a NixOS configuration on Flakery, you need to create a [deployment template](/concepts/deployment-templates/). You can do this by visiting the [Flakery website](https://flakery.dev/flakes) and adding your flake to the input field. the url should look something like this: `github:$YOUR_USERNAME/go-webserver#flakery`.
+
+![Alt text](./image.png)
+
+::: tip
+Replace `$YOUR_USERNAME` with your Github username.
+:::
+
+You should see your newly created deployment template below.
+
+![Alt text](./image-1.png)
+
+### Deploy your NixOS Configuration
+
+Click on the deployment template to view its details page.
+
+![Alt text](./image-2.png)
+
+Click on the `Create Deployment` in the upper right hand corner of the screen to create a deployment of your nix flake.  You should then see a deployment created at the bottom of your screen. 
+
+![Alt text](./image-5.png)
+
+Click on the the deployment to view its details
+
+![Alt text](./image-6.png)
+
+after a few minutes, when the flake is finished applying, you can navigate to the domain linked in the deployment details page to view your `Hello World` web server's response. 
+
+![Alt text](./image-7.png)

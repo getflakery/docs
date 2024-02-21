@@ -11,6 +11,7 @@
 
 ## Create a Deployment 
 
+- [Create a Github Repo and Deploy Your Flake on Flakery](./create-git-deploy-flakery/)
 <!-- - [Create a Flakery Deployment from a Flakery Template](/create-deployment/) -->
 <!-- - [Host a Docker Image on Flakery](/deploy-docker/) -->
 <!-- - [Host a Nix Flake on Flakery](/deploy-flake-app/) -->
