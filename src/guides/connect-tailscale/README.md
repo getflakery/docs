@@ -42,11 +42,26 @@ in
 This enables the tailscale service for nixos, specifies the location of the tailscale authentication key file, and specifies the extra flags to use when bringing up the tailscale service.
 
 
-### Create a Flakery Template 
+## Create a Flakery Template and Deployment. 
+
+Create a flakery template for your nix flake. If you need a refresher, check out the [Creating a Flakery Template](/guides/quick-start/#create-your-deployment-template) section of the quick start guide.
 
 
-### Add AuthKey to Your Flakery Template
 
-### Deploy the Template 
+## Add AuthKey to Your Flakery Template
 
-### View the Flakery Instance in the Tailscale Admin Console and Connect to it via Tailscale SSH
+create an auth key on the [tailscale keys page](https://login.tailscale.com/admin/settings/keys).
+![Alt text](./image-1.png)
+
+On the template page, add a file to your template with the `/tsauthkey` path and an auth key from the previous step.
+![Alt text](./image.png). Then save the file to the template. 
+
+## Deploy the Template 
+
+ Deploy your newly created flakery template. If you need a refresher, check out the [Create Your Deployment](/docs/guides/quick-start/#create-your-deployment) section of the quick start guide.
+
+## View the Flakery Instance in the Tailscale Admin Console and Connect to it via Tailscale SSH
+
+Once your flakery instance is deployed, you can view it in the tailscale admin console and connect to it via tailscale ssh.
+
+![Alt text](./tailscale-instance.png)

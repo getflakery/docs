@@ -109,6 +109,10 @@ module.exports = {
                 title: "Connect to a Deployment With SSH",
                 path: "/guides/connect-ssh/"
               },
+              {
+                title: "Connect to a Deployment With  Tailscale SSH",
+                path: "/guides/connect-tailscale/"
+              },
             ]
           }
         ]
