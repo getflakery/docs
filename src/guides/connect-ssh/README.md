@@ -7,7 +7,7 @@ In order to connect to a flakery instance via SSH, we will need to edit the nixo
 This guide assumes that you already have a nix flake that you would like to connect to via SSH. If you do not have a nix flake, see [Using the Flakery Nix Flake Template](/guides/nix-flake-template) for instructions on how to create a new nix flake using the flakery template. If instead, you'd just like to create one in the current directoy, run the following command:
 
 ```sh
-nix flake new -t github:flakery/flakes#flakery
+nix flake init -t github:getflakery/flakes#flakery
 ```
 
 ## Edit Your NixOS Configuration to Allow SSH Access

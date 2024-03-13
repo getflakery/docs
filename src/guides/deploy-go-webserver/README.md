@@ -1,8 +1,5 @@
 # Deploy a Go Webserver on Flakery
 
-[[toc]]
-
-
 This guide will go over creating a go http server and serving it using flakery. 
 
 ## Create a new directory and initialize a new flake

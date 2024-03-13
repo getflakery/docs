@@ -1,7 +1,5 @@
 # Quick Start
 
-[[toc]]
-
 Flakery creates templates and deployments for your nixos flakes. You can use flakery to create deployments of a nixos flake, seeded with a file system. These files are encrypted at rest and can be decrypted on demand. 
 
 ## Prerequisites

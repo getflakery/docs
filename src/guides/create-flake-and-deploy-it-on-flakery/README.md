@@ -1,7 +1,5 @@
 # Create a NixOS Flake and Deploy it on Flakery
 
-[[toc]]
-
 In this tutorial, we will create a basic NixOS flake and deploy it on Flakery.
 
 ## Prerequisites

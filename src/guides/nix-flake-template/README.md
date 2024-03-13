@@ -1,7 +1,5 @@
 # Using the Flakery Nix Flake Template
 
-[[toc]]
-
 Flakery provides a nix flake template to for your convienience. This guide will assist you in using this template to deploy NixOS on Flakery. 
 
 ## Initialize a new Nix Flake using the Flakery Template
@@ -9,7 +7,7 @@ Flakery provides a nix flake template to for your convienience. This guide will 
 To initialize a new Nix Flake  in the current directoty, using the Flakery template, run the following command:
 
 ```sh
-nix flake new -t github:flakery/flakes#flakery
+nix flake init -t github:getflakery/flakes#flakery
 ```
 
 ## Customize Your Flake's NixOS Configuration
