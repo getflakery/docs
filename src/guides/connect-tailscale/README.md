@@ -58,7 +58,7 @@ On the template page, add a file to your template with the `/tsauthkey` path and
 
 ## Deploy the Template 
 
- Deploy your newly created flakery template. If you need a refresher, check out the [Create Your Deployment](/docs/guides/quick-start/#create-your-deployment) section of the quick start guide.
+ Deploy your newly created flakery template. If you need a refresher, check out the [Create Your Deployment](/guides/quick-start/#create-your-deployment) section of the quick start guide.
 
 ## View the Flakery Instance in the Tailscale Admin Console and Connect to it via Tailscale SSH
 
