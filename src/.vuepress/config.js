@@ -51,8 +51,8 @@ module.exports = {
         },
 
       {
-        text: 'Join our Discord!',
-        link: 'https://discord.gg/vG2VfJ73HW'
+        text: 'Join us on Matrix!',
+        link: 'https://matrix.to/#/#flakery:matrix.org'
       },
       {
         text: 'Dashboard',
